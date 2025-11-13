@@ -4,7 +4,11 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const apiTarget = process.env.VITE_API_URL || 'http://localhost:5000';
+const apiTarget =
+  process.env.VITE_API_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? 'https://annatation-backend.onrender.com'
+    : 'http://localhost:5000');
 
 export default defineConfig({
   plugins: [react()],

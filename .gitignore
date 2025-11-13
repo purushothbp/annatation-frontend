@@ -1,0 +1,8 @@
+# Environment files
+.env
+.env.local
+
+# Temp / OS-specific
+tmp
+*.log
+.DS_Store

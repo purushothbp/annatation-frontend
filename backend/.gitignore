@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Environment files
+.env
+.env.local
+
+# Application storage
+storage/documents/*
+storage/text/*
+!storage/documents/.gitkeep
+!storage/text/.gitkeep
+
+# Logs
+*.log
